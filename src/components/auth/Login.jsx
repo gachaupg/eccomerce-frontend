@@ -20,8 +20,8 @@ const Login = () => {
     e.preventDefault();
 
     console.log(user);
-    dispatch(loginUser(user));
-    navigate("/");
+    dispatch(loginUser({user,navigate}));
+  
 
   };
 

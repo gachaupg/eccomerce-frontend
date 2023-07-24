@@ -8,6 +8,10 @@ const initialState = {
   name: "",
   email: "",
   _id: "",
+  country:"",
+  address:"",
+  city:"",
+  phone:"",
   isAdmin: false,
   registerStatus: "",
   registerError: "",
@@ -23,6 +27,11 @@ export const registerUser = createAsyncThunk(
       const token = await axios.post(`${url}/register`, {
         name: values.name,
         email: values.email,
+        country: values.country,
+        address: values.address,
+        city: values.city,
+        phone: values.phone,
+
         password: values.password,
       });
 
@@ -38,7 +47,7 @@ export const registerUser = createAsyncThunk(
 
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
-  async (values, { rejectWithValue }) => {
+  async (values,navigate, { rejectWithValue }) => {
     try {
       const token = await axios.post(`${url}/login`, {
         email: values.email,
@@ -46,6 +55,7 @@ export const loginUser = createAsyncThunk(
       });
 
       localStorage.setItem("token", token.data);
+navigate('/')
       return token.data;
     } catch (error) {
       console.log(error.response);
