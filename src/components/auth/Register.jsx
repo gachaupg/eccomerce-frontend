@@ -30,7 +30,7 @@ const Register = () => {
 
     dispatch(registerUser(user));
   };
-    console.log(user);
+    console.log('jj',user);
 
   return (
     <>

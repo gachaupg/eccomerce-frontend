@@ -77,12 +77,11 @@ const CreateProduct = () => {
         />
         <select onChange={(e) => setBrand(e.target.value)} required>
           <option value="">Select Category</option>
-          <option value="iphone">Iphone</option>
-          <option value="samsung">Sumsung</option>
-          <option value="huawei">Huawei</option>
-          <option value="xiomi">Xiomi</option>
-          <option value="techno">Techno</option>
-          <option value="nokia">Nokia</option>
+          <option value="phone">phone</option>
+          <option value="laptop">laptop</option>
+          <option value="electronic">electronic</option>
+          <option value="clothing">Clothing</option>
+          <option value="furnature">Furnatures</option>
           <option value="other">Other</option>
         </select>
         <input
@@ -99,39 +98,39 @@ const CreateProduct = () => {
         />
          <input
           type="text"
-          placeholder="ram of the phone"
+          placeholder="specifications one"
           onChange={(e) => setRam(e.target.value)}
-          required
+         
         />
       <input
           type="text"
-          placeholder="internal storage"
+          placeholder="specifications two"
           onChange={(e) => setRom(e.target.value)}
-          required
+          
         />
          <input
           type="text"
-          placeholder="battery capacity"
+          placeholder="specifications three"
           onChange={(e) => setBattery(e.target.value)}
-          required
+        
         />
          <input
           type="text"
-          placeholder="camera"
+          placeholder="specifications four"
           onChange={(e) => setCamera(e.target.value)}
-          required
+          
         />
          <input
           type="text"
-          placeholder=" OS"
+          placeholder="specifications five"
           onChange={(e) => setOs(e.target.value)}
-          required
+          
         />
       <input
           type="text"
-          placeholder="simcard"
+          placeholder="specifications six"
           onChange={(e) => setSim(e.target.value)}
-          required
+          
         />
         <input
           type="text"
@@ -149,7 +148,7 @@ const CreateProduct = () => {
           type="text"
           placeholder="Location"
           onChange={(e) => setLocation(e.target.value)}
-          required
+          
         />
       
 

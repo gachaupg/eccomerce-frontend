@@ -61,10 +61,9 @@ function App() {
                 <Route path="/tour/:id" element={<SingleTour />} />
           </Routes>
         </div>
-        <div style={{marginTop:'30rem'}}>
         <Footer/>
 
-        </div>
+       
       </BrowserRouter>
       
     </div>

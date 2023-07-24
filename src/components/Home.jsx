@@ -102,11 +102,11 @@ const Home = () => {
                     <span className="pric"><span style={{display:'flex', gap:'2rem'}}>Price</span> <span>ksh{product.price}</span> </span>
                   </div> */}
                    <div className="details">
-                    <span style={{display:'flex', gap:'4rem'}} > <span> price </span> <span> ksh {product.price}</span></span>
+                    <span style={{display:'flex', gap:'4rem'}} > <span> price </span> <span> $ {product.price}</span></span>
                   </div> 
                   <div className="details">
                     
-                    <span style={{display:'flex', gap:'4rem'}} > <span >location</span>   <span>{product.location}</span> </span>
+                    <span style={{display:'flex', gap:'4rem'}} > <span >Brand</span>   <span>{product.brand}</span> </span>
                   </div>
                   <div className="details">
                     
